@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "description": "Phuot frontend with ReactJs",
+  "main": "scripts/app.js",
+  "dependencies": {
+    "flux": "^2.0.0",
+    "react": "^0.13.3",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.2.0",
+    "envify": "~3.0.0",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "reactify": "^0.15",
+    "watchify": "~2.1.0"
+  },
+  "scripts": {
+    "start": "watchify -o assets/js/bundle.js -v -d .",
+    "build": "browserify . | uglifyjs -cm > assets/js/bundle.min.js"
+  },
+  "author": "NoPu Nguyen",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
