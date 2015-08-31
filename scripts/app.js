@@ -42,6 +42,6 @@ var routes = (
 );
 // Or, if you'd like to use the HTML5 history API for cleaner URLs:
 
-Router.run(routes, function (Handler) {
+Router.run(routes, Router.HistoryLocation, function (Handler) {
   React.render(<Handler/>, document.body);
 });
