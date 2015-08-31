@@ -27883,7 +27883,7 @@ var routes = (
 );
 // Or, if you'd like to use the HTML5 history API for cleaner URLs:
 
-Router.run(routes, Router.HistoryLocation, function (Handler) {
+Router.run(routes, function (Handler) {
   React.render(React.createElement(Handler, null), document.body);
 });
 },{"./actions/PhuotActions":"/var/www/phuotfrontend/scripts/actions/PhuotActions.js","./components/PhuotComponents.react":"/var/www/phuotfrontend/scripts/components/PhuotComponents.react.js","./components/layouts/Reloader.react":"/var/www/phuotfrontend/scripts/components/layouts/Reloader.react.js","./components/plans/IndexPlan.react":"/var/www/phuotfrontend/scripts/components/plans/IndexPlan.react.js","./components/plans/ShowPlan.react":"/var/www/phuotfrontend/scripts/components/plans/ShowPlan.react.js","./components/users/Profile.react":"/var/www/phuotfrontend/scripts/components/users/Profile.react.js","./components/users/UserLogin.react":"/var/www/phuotfrontend/scripts/components/users/UserLogin.react.js","./components/users/UserRegister.react":"/var/www/phuotfrontend/scripts/components/users/UserRegister.react.js","react":"/var/www/phuotfrontend/node_modules/react/react.js","react-router":"/var/www/phuotfrontend/node_modules/react-router/lib/index.js"}]},{},["/var/www/phuotfrontend"])
