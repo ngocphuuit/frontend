@@ -12,6 +12,7 @@ var Profile = require('./components/users/Profile.react');
 //Front End Plan
 var IndexPlan = require('./components/plans/IndexPlan.react');
 var ShowPlan = require('./components/plans/ShowPlan.react');
+var CreatePlan = require('./components/plans/CreatePlan.react');
 
 var Router = require('react-router');
 var Route = Router.Route;
@@ -38,6 +39,7 @@ var routes = (
     <Route name="user" handler={Profile}/>
     <Route name="plans" handler={IndexPlan}/>
     <Route name="plans/show" handler={ShowPlan}/>
+    <Route name="plans/create" handler={CreatePlan}/>
   </Route>
 );
 // Or, if you'd like to use the HTML5 history API for cleaner URLs:
