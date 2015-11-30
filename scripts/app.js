@@ -8,6 +8,7 @@ var Reloader = require('./components/layouts/Reloader.react');
 var UserRegister = require('./components/users/UserRegister.react');
 var UserLogin = require('./components/users/UserLogin.react');
 var Profile = require('./components/users/Profile.react');
+var UserList = require('./components/users/Index.react');
 
 //Front End Plan
 var IndexPlan = require('./components/plans/IndexPlan.react');
@@ -37,6 +38,7 @@ var routes = (
     <Route name="login" handler={UserLogin}/>
     <Route name="register" handler={UserRegister}/>
     <Route name="user" handler={Profile}/>
+    <Route name="index" handler={UserList}/>
     <Route name="plans" handler={IndexPlan}/>
     <Route name="plans/show" handler={ShowPlan}/>
     <Route name="plans/create" handler={CreatePlan}/>

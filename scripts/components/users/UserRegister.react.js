@@ -2,6 +2,10 @@ var React = require('react');
 var UserStore = require('../../stores/UserStore');
 var UserActions = require('../../actions/UserActions');
 
+var Router = require('react-router');
+var Route = Router.Route;
+var Link = Router.Link;
+
 function getAllUsers() {
   return {
     allUsers: UserStore.getUsers()
@@ -79,7 +83,7 @@ var UserRegister = React.createClass({
                         <label htmlFor="icon_prefix-3">Password Confirm</label>
                     </div>
                 </div>
-                <a href="/login" className="pull-right">Already have an account ?</a>
+                <Link to={'/login'} className="pull-right">Already have an account ?</Link>
                 <div className="clearfix"></div>
                 <div className="piluku-check">
                     <input type="checkbox" id="c1" />

@@ -2,6 +2,10 @@ var React = require('react');
 var UserStore = require('../../stores/UserStore');
 var UserActions = require('../../actions/UserActions');
 
+var Router = require('react-router');
+var Route = Router.Route;
+var Link = Router.Link;
+
 var ModalLogin = require('./ModalLogin.react');
 
 //Layout
@@ -76,7 +80,7 @@ var UserLogin = React.createClass({
                 </div>
                 <div className="bottom_info">
                     <a href="#" className="pull-right" data-toggle="modal" data-target="#forgot">forgot password?</a>
-                    <a href="/register" className="pull-left">Register new account</a>
+                    <Link to={'/register'} className="pull-left">Register new account</Link>
                 </div>
                 <div className="clearfix"></div>
                 <a href="index-2.html" className="btn btn-primary btn-block">Sign in</a>
